@@ -22,13 +22,9 @@ In today's digital age, understanding how we spend our time online is crucial fo
 
     Navigate to the project directory:
 
-    bash
-
-cd screen-time-analysis
+    cd screen-time-analysis
 
 Install the required dependencies:
-
-bash
 
     pip install -r requirements.txt
 
@@ -42,22 +38,19 @@ Usage
         Use the provided Python scripts to generate interactive visual reports.
         Analyze your screen time by running:
 
-        bash
 
         python analyze_screen_time.py
 
-    View Reports:
+    
+   View Reports:
         Open the generated reports in your browser to interactively explore your screen time analysis with Plotly.
 
 Example
 
-python
-
 import screen_time_analysis as sta
 import plotly.express as px
 
-# Load your screen time data
-data = sta.load_data("screen_time_log.json")
+\
 
 # Generate an interactive visual report
 fig = px.bar(data, x='Date', y='Time Spent', color='Application')
